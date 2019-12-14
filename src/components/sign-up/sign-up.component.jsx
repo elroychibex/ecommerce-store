@@ -32,14 +32,16 @@ export default class SignUp extends Component {
         password
       );
       await createUserProfileDocument(user, { displayName });
+      //alert(`User ${displayName} successfully created`);
       this.setState({
         displayName: "",
         email: "",
         password: "",
         confirmPassword: ""
       });
-    } catch (error) {}
-    //console.log(error);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   handleChange = event => {
