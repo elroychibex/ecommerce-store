@@ -14,7 +14,7 @@ const CartIcon = ({ toggleCartHidden, itemCount }) => (
 
 //Sending to the reducer
 const mapDispatchToProps = dispatch => ({
-  toogleCartHidden: () => dispatch(toggleCartHidden())
+  toggleCartHidden: () => dispatch(toggleCartHidden())
 });
 
 //Recieving from the reducer
